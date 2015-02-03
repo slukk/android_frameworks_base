@@ -3589,6 +3589,11 @@ public final class Settings {
         public static final String ANIMATION_CONTROLS_EXIT_ONLY = "animation_controls_exit_only";
         public static final String ANIMATION_CONTROLS_REVERSE_EXIT = "animation_controls_reverse_exit";
 
+         /**
+         * Disable ads (HFM)
+         * @hide
+         */
+        public static final String HFM_DISABLE_ADS = "hfm_disable_ads";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
