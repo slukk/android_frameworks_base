@@ -3958,13 +3958,13 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         if (mHasNavigationBar) {
             if (mNavigationBarOnBottom) {
                 newMask |= EdgeGesturePosition.RIGHT.FLAG;
-                if (isPortrait && mUserNavBarHeight == 0
+                if (isPortrait && mNavigationBarHeight == 0
                         || !isPortrait && mNavigationBarOnBottom) {
                     newMask |= EdgeGesturePosition.BOTTOM.FLAG;
                 }
             } else {
                 newMask |= EdgeGesturePosition.BOTTOM.FLAG;
-                if (mUserNavBarWidth == 0) {
+                if (mNavigationBarWidth == 0) {
                     newMask |= EdgeGesturePosition.RIGHT.FLAG;
                 }
             }

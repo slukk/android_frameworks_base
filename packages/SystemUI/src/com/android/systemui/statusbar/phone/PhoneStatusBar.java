@@ -473,10 +473,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                             R.integer.heads_up_notification_decay),
                             UserHandle.USER_CURRENT);
                     resetHeadsUpDecayTimer();
-            	    }
-+            } else if (uri.equals(Settings.System.getUriFor(
-+                    Settings.System.PIE_CONTROLS))) {
-+                    attachPieContainer(isPieEnabled());
+            } else if (uri.equals(Settings.System.getUriFor(
+                    Settings.System.PIE_CONTROLS))) {
+                    attachPieContainer(isPieEnabled());
 		    }
             update();
         }
